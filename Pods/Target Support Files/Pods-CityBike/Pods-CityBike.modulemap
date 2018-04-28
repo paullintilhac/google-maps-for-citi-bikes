@@ -1,0 +1,6 @@
+framework module Pods_CityBike {
+  umbrella header "Pods-CityBike-umbrella.h"
+
+  export *
+  module * { export * }
+}
