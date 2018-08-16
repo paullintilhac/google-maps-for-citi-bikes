@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0B0F4020BD352800A919C7 /* placesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B0F3F20BD352800A919C7 /* placesButton.swift */; };
+		1B32F7AE20C025C400391A16 /* workingWithCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32F7AD20C025C400391A16 /* workingWithCoordinates.swift */; };
+		1B3F124320A07E32006FF035 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F124220A07E32006FF035 /* MapsViewController.swift */; };
+		1B5FFA92209B4B3900DF8095 /* workWithApiCitiBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5FFA91209B4B3900DF8095 /* workWithApiCitiBike.swift */; };
 		1B6148AB20936FF700F68972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6148AA20936FF700F68972 /* AppDelegate.swift */; };
 		1B6148AD20936FF700F68972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6148AC20936FF700F68972 /* ViewController.swift */; };
 		1B6148B020936FF700F68972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6148AE20936FF700F68972 /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0B0F3F20BD352800A919C7 /* placesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesButton.swift; sourceTree = "<group>"; };
+		1B32F7AD20C025C400391A16 /* workingWithCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workingWithCoordinates.swift; sourceTree = "<group>"; };
+		1B3F124220A07E32006FF035 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		1B5FFA91209B4B3900DF8095 /* workWithApiCitiBike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workWithApiCitiBike.swift; sourceTree = "<group>"; };
 		1B6148A720936FF700F68972 /* CityBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6148AA20936FF700F68972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B6148AC20936FF700F68972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +75,10 @@
 				1B6148B120936FF800F68972 /* Assets.xcassets */,
 				1B6148B320936FF800F68972 /* LaunchScreen.storyboard */,
 				1B6148B620936FF800F68972 /* Info.plist */,
+				1B5FFA91209B4B3900DF8095 /* workWithApiCitiBike.swift */,
+				1B3F124220A07E32006FF035 /* MapsViewController.swift */,
+				1B0B0F3F20BD352800A919C7 /* placesButton.swift */,
+				1B32F7AD20C025C400391A16 /* workingWithCoordinates.swift */,
 			);
 			path = CityBike;
 			sourceTree = "<group>";
@@ -166,11 +178,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CityBike/Pods-CityBike-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,14 +218,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CityBike/Pods-CityBike-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,7 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B6148AD20936FF700F68972 /* ViewController.swift in Sources */,
+				1B32F7AE20C025C400391A16 /* workingWithCoordinates.swift in Sources */,
+				1B5FFA92209B4B3900DF8095 /* workWithApiCitiBike.swift in Sources */,
+				1B0B0F4020BD352800A919C7 /* placesButton.swift in Sources */,
 				1B6148AB20936FF700F68972 /* AppDelegate.swift in Sources */,
+				1B3F124320A07E32006FF035 /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +391,10 @@
 				DEVELOPMENT_TEAM = TTLH92JS57;
 				INFOPLIST_FILE = CityBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Worksolutions.CityBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -392,7 +411,10 @@
 				DEVELOPMENT_TEAM = TTLH92JS57;
 				INFOPLIST_FILE = CityBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Worksolutions.CityBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
